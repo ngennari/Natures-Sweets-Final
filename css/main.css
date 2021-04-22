@@ -148,7 +148,7 @@ p {
 .menu-new {
 	height: 100vh;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     display: grid;
     background-color: #FDFBEF;
     margin: 0;
@@ -157,7 +157,7 @@ p {
 
 .menu-new .left { 
 	margin-left: 3rem;
-
+  grid-column: 1;
 
 } 
 
@@ -176,7 +176,7 @@ p {
 } 
 
 .menu-new .left .back {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .menu-new .left .top {
@@ -186,14 +186,13 @@ p {
 }  
 
 .menu-new .top h1 {
-	grid-column: 1/span-2;
+	grid-column: 1;
+  font-size: 4rem;
   margin: 0;
-  padding-top: 1rem;
 } 
 
 .menu-new h2 {
-	font-size: 2.25rem;
-
+	font-size: 2rem;
 }
 
 .menu-new .top img {
@@ -208,14 +207,25 @@ p {
 } 
 
 .menu-new .order {
-	
-	grid-column: 3/span-2;
 	background-color: #F8F8F8; 
-	text-align: center; 
+	text-align: left;
+  padding-left: 4rem;
+  padding-top: 3rem;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3,1fr);
 	display: grid; 
 	color: #7A99B0;
+} 
+
+.menu-new .order h3 {
+  font-family: 'Rubik' , sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  align-self: end;
+} 
+
+.menu-new .order p {
+  align-self: start;
 }
 
 .menu-new .drinks {
@@ -223,6 +233,7 @@ p {
 	grid-template-rows: 1fr;
 	display: grid; 
 	grid-gap: 5rem; 
+
 
 
 } 
@@ -297,7 +308,8 @@ p {
 .menu-returning .order {
 	grid-column: 2;
 	background-color: #F8F8F8; 
-	text-align: center; 
+	text-align: left;
+  padding-left: 4rem; 
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3,1fr);
 	display: grid; 
@@ -306,13 +318,21 @@ p {
 
 .menu-returning .order h2 {
 	font-size: 2rem;
+  padding-top: 3rem;
+} 
+
+.menu-returning .order h3 {
+  font-weight: 400; 
+  font-size: 1.75rem;
+  font-family: 'Rubik' , sans-serif;
+  align-self: end;
 }
 
 
 .page-coffee {
     height: 100vh;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: 3fr 1fr;
     display: grid;
     background-color: #FDFBEF;
     margin: 0;	
@@ -324,6 +344,7 @@ p {
 	grid-column: 1;
 	padding-left: 4rem; 
 	padding-bottom: 2rem;
+  height: 100vh;
 
 } 
 
@@ -390,10 +411,22 @@ p {
 }  
 
 .page-coffee .left .buttons {
-	grid-template-columns: repeat(2,1fr);
+	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
 	display: grid;
 	
+} 
+
+.page-coffee .left .buttons .add {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.page-coffee .left .buttons .clear {
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 14rem;
+  
 }
 
 .page-coffee .left .clear {
@@ -580,20 +613,26 @@ label {
 
 
 .page-coffee .order {
-    grid-column: 5/span-2;
 	background-color: #F8F8F8; 
-	text-align: center;
+  padding-left: 4rem;
+	text-align: left;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
 	display: grid; 
 	color: #7A99B0;
+  height: 100vh;
 }  
 
 .page-coffee .order h2 {
 	font-size: 2rem; 
-    text-align: left;
-	padding-left: 4rem;
+  padding-top: 3rem;
 } 
+
+.page-coffee .order h3 {
+  font-family: 'Rubik' , sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
 
 .page-coffee .order p {
 	font-size: 1rem; 
@@ -606,7 +645,7 @@ label {
 .page-coffee .order ul {
 	list-style: none;
 	text-align: left; 
-	padding-left: 4rem;
+	padding: 0;
 	margin: 0;
 
 }
@@ -631,14 +670,14 @@ label {
 .page-coffee .order a {
 	text-decoration: none;
 	background-color: #3B6053;
-    color: #ffffff;
-    font-family: 'Rubik' , sans-serif;
-    font-weight: 300;
-    font-size: 1.25rem;
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-	margin-left: 3rem;
-	margin-right: 3rem;
+  color: #ffffff;
+  font-family: 'Rubik' , sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+	text-align: center;
+	margin-right: 4rem;
 	margin-bottom: 20rem;
 	border-radius: 35px; 
 
@@ -772,7 +811,7 @@ label {
 
 
 .page-view-cart .order {
-    grid-column: 5/span-2;
+  grid-column: 5/span-2;
 	background-color: #F8F8F8; 
 	text-align: center;
 	grid-template-columns: 1fr;
@@ -1165,7 +1204,7 @@ label {
 .page-coffee-new {
     height: 100vh;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: 3fr 1fr;
     display: grid;
     background-color: #FDFBEF;
     margin: 0;	
@@ -1246,7 +1285,18 @@ label {
 	grid-template-columns: repeat(2,1fr);
 	grid-template-rows: 1fr;
 	display: grid;
-	
+} 
+
+.page-coffee-new .left .buttons .add {
+  grid-column: 1;
+  grid-row: 1; 
+}
+ 
+.page-coffee-new .left .buttons .clear {
+  grid-column: 1;
+  grid-row: 1; 
+  z-index: 1; 
+  margin-left: 14rem; 
 }
 
 .page-coffee-new .left .clear {
@@ -1435,7 +1485,7 @@ label {
 
 
 .page-coffee-new .order {
-    grid-column: 5/span-2;
+    
 	background-color: #F8F8F8; 
 	text-align: center;
 	grid-template-columns: 1fr;
@@ -1446,6 +1496,7 @@ label {
 
 .page-coffee-new .order h2 {
 	font-size: 2rem; 
+  padding-top: 3rem;
 	
 }  
 
