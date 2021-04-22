@@ -231,7 +231,7 @@ p {
 .menu-returning {
 	height: 100vh;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 3fr 1fr;
     display: grid;
     background-color: #FDFBEF;
     margin: 0;
@@ -248,7 +248,8 @@ p {
 
 .menu-returning .left {
 	margin: 0;
-	padding-left: 4rem;
+	padding-left: 4rem; 
+  grid-column: 1;
 } 
 
 .menu-returning .left .top {
@@ -294,7 +295,7 @@ p {
 
 
 .menu-returning .order {
-	grid-column: 3/span-2;
+	grid-column: 2;
 	background-color: #F8F8F8; 
 	text-align: center; 
 	grid-template-columns: 1fr;
