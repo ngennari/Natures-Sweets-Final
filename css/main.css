@@ -1504,7 +1504,10 @@ label {
 .page-coffee-new .order h3 {
 	 text-align: left; 
    font-weight: 400;
-   font-size: 1.5rem;
+   padding-left: 4rem;
+   font-family: 'Rubik' , sans-serif;
+   font-size: 1.75rem;
+
 	
 } 
 
