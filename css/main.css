@@ -1497,12 +1497,14 @@ label {
 .page-coffee-new .order h2 {
 	font-size: 2rem; 
   padding-top: 3rem;
-	
+	text-align: left;
+  padding-left: 4rem;
 }  
 
-.page-coffee-new .order h2:first-child {
-	text-align: left;
-	padding-left: 4rem; 
+.page-coffee-new .order h3 {
+	 text-align: left;
+   font-weight: 400;
+   font-size: 1.5rem;
 	
 } 
 
