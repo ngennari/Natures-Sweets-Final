@@ -207,7 +207,7 @@ p {
 } 
 
 .menu-new .order {
-	background-color: #000000; 
+	background-color: #c7d2d8; 
 	text-align: left;
   padding-left: 4rem;
   padding-top: 3rem;
@@ -307,7 +307,7 @@ p {
 
 .menu-returning .order {
 	grid-column: 2;
-	background-color: #F8F8F8; 
+	background-color: #c7d2d8; 
 	text-align: left;
   padding-left: 4rem; 
 	grid-template-columns: 1fr;
@@ -613,7 +613,7 @@ label {
 
 
 .page-coffee .order {
-	background-color: #F8F8F8; 
+	background-color: #c7d2d8; 
   padding-left: 4rem;
 	text-align: left;
 	grid-template-columns: 1fr;
@@ -812,7 +812,7 @@ label {
 
 .page-view-cart .order {
   grid-column: 5/span-2;
-	background-color: #F8F8F8; 
+	background-color: #c7d2d8; 
 	text-align: center;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3,1fr);
@@ -1486,7 +1486,7 @@ label {
 
 .page-coffee-new .order {
     
-	background-color: #F8F8F8; 
+	background-color: #c7d2d8; 
 	text-align: center;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
